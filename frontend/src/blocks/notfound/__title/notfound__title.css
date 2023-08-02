@@ -1,0 +1,12 @@
+.notfound__title {
+  color: #ffffff;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+@media(max-width: 480px) {
+  .notfound__title{
+    font-size: 30px;
+  }
+}

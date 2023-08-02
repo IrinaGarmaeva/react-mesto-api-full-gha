@@ -1,0 +1,9 @@
+@media (max-width: 700px) {
+  .header__nav_active {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px 0 40px 0;
+    display: flex;
+  }
+}

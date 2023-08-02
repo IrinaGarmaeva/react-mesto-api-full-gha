@@ -1,0 +1,30 @@
+.auth__button {
+  background-color: #ffffff;
+  font-family: 'Inter', 'Aria', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 122%;
+  text-align: center;
+  color: #000000;
+  padding: 14px 84px;
+  border: 0;
+  margin-top: 216px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.7s ease;
+  border-radius: 2px;
+}
+
+.auth__button:hover {
+  opacity: 0.8;
+}
+
+
+@media (max-width: 400px){
+  .auth__button{
+    font-size: 16px;
+    line-height: 121%;
+    margin-top: 173px;
+    padding: 14px 35px;
+  }
+}

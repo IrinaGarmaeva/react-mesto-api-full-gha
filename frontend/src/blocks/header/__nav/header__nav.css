@@ -1,0 +1,16 @@
+.header__nav {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  display: flex;
+  padding-top: 6px;
+}
+
+@media (max-width: 700px) {
+  .header__nav{
+    border-bottom: 1px solid rgba(54, 54, 54, 0.7);
+    display: none;
+  }
+}
+
+

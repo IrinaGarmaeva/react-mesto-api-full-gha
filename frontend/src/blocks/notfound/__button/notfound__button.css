@@ -1,0 +1,25 @@
+.notfound__button {
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 122%;
+  font-weight: 400;
+  padding: 14px 50px;
+  border: none;
+  border-radius: 2px;
+  opacity: 1;
+  transition: opacity 0.7s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
+}
+
+.notfound__button:hover {
+  opacity: 0.8;
+}
+
+@media(max-width: 480px) {
+  .notfound__button {
+    padding: 14px 30px;
+  }
+}

@@ -1,0 +1,29 @@
+.header__nav-button {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url('../../../images/burger-menu.png');
+  background-size: 24px 18px;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 24px;
+  height: 18px;
+  position: absolute;
+  right: 30px;
+  bottom: 42px;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width:700px) {
+  .header__nav-button {
+    display: block;
+    margin-top: 6px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header__nav-button{
+    bottom: 31px;
+  }
+}

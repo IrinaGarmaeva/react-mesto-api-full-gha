@@ -1,0 +1,22 @@
+.header {
+  min-height: 74px;
+  max-width: 910px;
+  margin: 0 auto 0;
+  padding: 45px 15px 0 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.7);
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 400px) {
+  .header {
+    min-height: 56px;
+    padding: 28px 0 0 0;
+  }
+}
+
+

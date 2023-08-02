@@ -1,0 +1,13 @@
+.notfound__subtitle{
+  font-size: 30px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  margin: 5px 0 40px 0;
+}
+
+@media(max-width: 480px) {
+  .notfound__subtitle{
+    font-size: 21px;
+  }
+}

@@ -1,0 +1,16 @@
+.header__signout-button {
+  border: none;
+  padding: 0;
+  background-color: #000000;
+  color: #a9a9a9;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 122%;
+  cursor: pointer;
+}
+
+@media (max-width:700px) {
+  .header__signout-button {
+    align-self: center;
+  }
+}
