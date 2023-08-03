@@ -1,10 +1,17 @@
 const jwt = require('jsonwebtoken');
 const UnauthorizedError = require('../errors/unauthorizedError');
+require('dotenv').config();
 
-const SECRET_KEY = 'secret';
+const { NODE_ENV, JWT_SECRET } = process.env;
+
+// const SECRET_KEY = 'secret';
 
 function generateToken(payload) {
-  return jwt.sign(payload, SECRET_KEY, { expiresIn: '7d' });
+  return jwt.sign(
+    payload,
+    NODE_ENV === 'production' ? JWT_SECRET : 'secret',
+    { expiresIn: '7d' },
+  );
 }
 
 function checkToken(token) {
@@ -13,9 +20,8 @@ function checkToken(token) {
   }
 
   try {
-    return jwt.verify(token, SECRET_KEY);
+    return jwt.verify(token, JWT_SECRET);
   } catch (error) {
-    console.log('не прошла авторизация');
     throw new UnauthorizedError('Необходима авторизация');
   }
 }

@@ -7,8 +7,9 @@ const { errors } = require('celebrate');
 const cors = require('cors');
 
 const routes = require('./routes');
-const errorHandler = require('./middlewares/errorHandler');
 const limiter = require('./utils/limiter');
+const errorHandler = require('./middlewares/errorHandler');
+const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const { PORT = 4000 } = process.env;
 
@@ -25,8 +26,10 @@ app.use(limiter);
 app.use(helmet());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(requestLogger);
 
 app.use(routes);
+app.use(errorLogger);
 app.use(errors());
 app.use(errorHandler);
 
