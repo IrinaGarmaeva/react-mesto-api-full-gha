@@ -1,4 +1,5 @@
-export const BASE_URL = "http://localhost:4000";
+// export const BASE_URL = "http://localhost:4000";
+export const BASE_URL = "https://api.mesto.irina.nomoreparties.co";
 
 function checkResponse(res) {
   if (res.ok) {

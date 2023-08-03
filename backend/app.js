@@ -19,7 +19,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/mestodb', {
   .catch(() => console.log('No connection to DB'));
 
 const app = express();
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+app.use(cors({ origin: ['http://localhost:3000', 'https://mesto.irina.nomoreparties.co'], credentials: true }));
 app.use(cookieParser());
 app.use(limiter);
 app.use(helmet());

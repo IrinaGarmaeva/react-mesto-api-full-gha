@@ -105,7 +105,8 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: 'http://localhost:4000',
+  // baseUrl: 'http://localhost:4000',
+  baseUrl: 'https://api.mesto.irina.nomoreparties.co',
   headers: {
     authorization: '1ddaccfd-6cdb-4497-bcf7-c6a054674d3b',
     'Content-Type': 'application/json'
