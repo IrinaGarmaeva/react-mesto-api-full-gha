@@ -138,17 +138,15 @@ function App() {
       .catch((error) => console.log(`Error: ${error.status}`));
   }
 
-  function handleAddNewCard({ values, resetForm }) {
+  function handleAddNewCard({ name, link }) {
     setIsLoading(true);
     api
-      .addNewCard({ newName: values.name, newLink: values.link })
-      .then((newCard) => {
-        setCards([newCard, ...cards]);
-        resetForm();
-        closeAllPopups();
-      })
+      .addNewCard({ newName: name, newLink: link })
+      .then((newCard) => setCards([newCard, ...cards]))
+      .then(() => closeAllPopups())
       .catch((error) => console.log(`Error: ${error.status}`));
   }
+
   function checkToken() {
       auth
         .getToken()
