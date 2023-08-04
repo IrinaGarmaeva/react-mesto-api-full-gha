@@ -7,9 +7,17 @@ function Login({ onLogin, isLoading }) {
     password: '',
   })
 
+  function resetForm() {
+    setFormValue({
+      email: '',
+      password: '',
+    })
+  }
+
   function handleSubmit(evt) {
     evt.preventDefault();
     onLogin(formValue.email, formValue.password);
+    resetForm();
   }
 
   function handleChange(evt) {

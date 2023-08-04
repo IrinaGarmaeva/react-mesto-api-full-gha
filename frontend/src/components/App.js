@@ -15,7 +15,7 @@ import Login from "./Login";
 import NotFound from "./NotFound";
 import InfoTooltip from "./InfoTooltip";
 import { ProtectedRoute } from "./ProtectedRoute";
-import * as auth from "../auth";
+import * as auth from "../utils/auth";
 
 function App() {
   const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = useState(false);
@@ -202,6 +202,8 @@ function App() {
       })
       .catch((err) => {
         console.log(err);
+        setIsRegister(false);
+        setIsInfoTooltipOpen(true);
       });
   }
 
