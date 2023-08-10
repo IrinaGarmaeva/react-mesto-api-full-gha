@@ -1,43 +1,98 @@
-[![Статус тестов](../../actions/workflows/tests.yml/badge.svg)](../../actions/workflows/tests.yml)
-# react-mesto-api-full
+# Educational project: Setting Up and Deploying the 'Mesto' Project from [Yandex Practicum](https://practicum.yandex.ru/) Web-developer course.
 
-# Проектная работа: настройка и деплой проекта Место. Создана в рамках обучения в [Яндекс.Практикум](https://practicum.yandex.ru/) на курсе ["Веб-разработчик"](https://practicum.yandex.ru/web/).
+## Description
 
-## Описание
-Репозиторий для приложения проекта `Mesto`, включающий фронтенд и бэкенд части приложения со следующими возможностями: авторизации и регистрации пользователей, операции с карточками и пользователями. Бэкенд расположите в директории `backend/`, а фронтенд - в `frontend/`.
+Project `Mesto` is spa where users can share photos, delete them, and like them, as well as change user information and avatar. Project includes frontend and backend components. Place the backend in the `backend/` directory and the frontend in the `frontend/` directory.
 
-## Ссылки на проект
+## Links
 
-IP-адрес 84.201.128.230
+IP: 84.201.128.230
+Frontend: https://mesto.irina.nomoreparties.co/
+Backend: https://api.mesto.irina.nomoreparties.co/
 
-Frontend https://mesto.irina.nomoreparties.co/
+## Functionality
 
-Backend https://api.mesto.irina.nomoreparties.co/
+* User registration and authorization
+* Editing user data
+* Updating avatar
+* Adding a new card
+* Adding and removing likes (including like counter)
+* Modal window with an enlarged photo of the card
+* Deleting a card created by the user with a confirmation modal window
+* Data exchange with the server
 
-## Функционал
-* Регистрация и авторизация пользователя
-* Редактирование данных пользователя
-* Обновление аватара
-* Добавление новой карточки
-* Добавление и снятие лайка (включая счетчик лайков)
-* Модальное окно с увеличенной фотографией карточки
-* Удаление созданной пользователем карточки с модальным окном подтверждения действия
-* Обмен данными с сервером
 
-## Технологии
+## Technologies
+### Frontend
 * HTML
 * BEM
 * CSS
 * Flexbox
 * GRID
-* React JS
+* React JS (Functional components, hooks)
 * Webpack
+
+### Backend
 * Node.js
 * Express
 * MongoDB
+* Nginx
+* pm2
 * Celebrate
 * Winston
 
-Адрес репозитория: https://github.com/IrinaGarmaeva/react-mesto-api-full-gha
+## How to install and run locally
 
+It may happen that `Mesto` can not be available due to hosting expiration. You have ability to download and run this app\repo locally.
+
+### Frontend
+
+* Settings for frontend (./frontend folder). All commands are located in package.json:
+
+Clone repository:
+
+  git clone git@github.com:IrinaGarmaeva/react-mesto-api-full-gha.git
+
+Install dependencies:
+
+  `npm install`
+
+Run app:
+
+  `npm run start`
+
+Build app(production):
+
+  `npm run build`
+
+## Backend
+
+* Settings for backend (./backend folder). All commands are located in package.json:
+
+Clone repository:
+
+  git clone git@github.com:IrinaGarmaeva/react-mesto-api-full-gha.git
+
+Install dependencies:
+
+  `npm install`
+
+Run app:
+
+  `npm run start` - start server
+  `npm run dev` - start hot-reload server
+
+## Directories
+
+  `/routes` - folder with routes files
+  `/controllers` - folder with controllers files(users&cards)
+  `/models` - folder with schemas(users&cards)
+
+## Figma designs:
+
+- [Figma 4](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4);
+- [Figma 5](https://www.figma.com/file/bjyvbKKJN2naO0ucURl2Z0/JavaScript.-Sprint-5);
+- [Figma 6-7](https://www.figma.com/file/kRVLKwYG3d1HGLvh7JFWRT/JavaScript.-Sprint-6);
+- [Figma 9](https://www.figma.com/file/PSdQFRHoxXJFs2FH8IXViF/JavaScript-9-sprint);
+- [Figma 12](https://www.figma.com/file/5H3gsn5lIGPwzBPby9jAOo/JavaScript.-Sprint-12).
 
