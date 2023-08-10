@@ -2,13 +2,13 @@
 
 ## Description
 
-Project `Mesto` is spa where users can share photos, delete them, and like them, as well as change user information and avatar. Project includes frontend and backend components. Place the backend in the `backend/` directory and the frontend in the `frontend/` directory.
+Project `Mesto` is a spa where users can share photos, delete them, and like them, as well as change user information and avatar. Project includes frontend and backend components. Place the backend in the `backend/` directory and the frontend in the `frontend/` directory.
 
 ## Links
 
-IP: 84.201.128.230
-Frontend: https://mesto.irina.nomoreparties.co/
-Backend: https://api.mesto.irina.nomoreparties.co/
+IP: 84.201.128.230 <br>
+Frontend: https://mesto.irina.nomoreparties.co/ <br>
+Backend: https://api.mesto.irina.nomoreparties.co/ <br>
 
 ## Functionality
 
@@ -20,7 +20,6 @@ Backend: https://api.mesto.irina.nomoreparties.co/
 * Modal window with an enlarged photo of the card
 * Deleting a card created by the user with a confirmation modal window
 * Data exchange with the server
-
 
 ## Technologies
 ### Frontend
@@ -41,6 +40,17 @@ Backend: https://api.mesto.irina.nomoreparties.co/
 * Celebrate
 * Winston
 
+## Screenshots
+<img src="./frontend/src/images/screen_main_page.jpg" width="100%">
+<details><summary><b>Show all</b></summary>
+<img src="./frontend/src/images/screen_sign_in.jpg" width="100%">
+<img src="./frontend/src/images/screen_edit_profile_info.jpg" width="100%">
+<img src="./frontend/src/images/screen_edit_avatar.jpg" width="100%">
+<img src="./frontend/src/images/screen_opened_image.jpg" width="100%">
+<img src="./frontend/src/images/screen_main_page_mobile.jpg" width="49.6%">
+<img src="./frontend/src/images/screen_registration_mobile.jpg" width="49.6%">
+</details>
+
 ## How to install and run locally
 
 It may happen that `Mesto` can not be available due to hosting expiration. You have ability to download and run this app\repo locally.
@@ -51,7 +61,7 @@ It may happen that `Mesto` can not be available due to hosting expiration. You h
 
 Clone repository:
 
-  git clone git@github.com:IrinaGarmaeva/react-mesto-api-full-gha.git
+  `git clone git@github.com:IrinaGarmaeva/react-mesto-api-full-gha.git`
 
 Install dependencies:
 
@@ -79,14 +89,14 @@ Install dependencies:
 
 Run app:
 
-  `npm run start` - start server
-  `npm run dev` - start hot-reload server
+  `npm run start` - start server <br>
+  `npm run dev` - start hot-reload server <br>
 
 ## Directories
 
-  `/routes` - folder with routes files
-  `/controllers` - folder with controllers files(users&cards)
-  `/models` - folder with schemas(users&cards)
+  `/routes` - folder with routes files <br>
+  `/controllers` - folder with controllers files(users&cards) <br>
+  `/models` - folder with schemas(users&cards) <br>
 
 ## Figma designs:
 
